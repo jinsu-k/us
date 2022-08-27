@@ -22,8 +22,8 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const HeaderLogoBlock = styled.div`
-  padding-top: 10px;
   width: 10%;
+  padding-top: 10px;
 
   &:hover {
     cursor: pointer;
@@ -32,10 +32,10 @@ export const HeaderLogoBlock = styled.div`
 
 export const HeaderMenu = styled.div<HeaderStyleProps>`
   display: block;
-  padding-top: 20px;
   width: 10%;
+  padding-top: 20px;
   font-size: 20px;
-
+  font-family: 'NanumBarunGothicBold';
   color: ${props => (props.isSelected ? '#84e0cb' : '')};
 
   &:hover {

@@ -1,10 +1,25 @@
-/* 네이버 나눔고딕 글꼴 */
-.App {
-  text-align: center;
-  font-family: 'NanumBarunGothicBold';
+/* 네이버 나눔 바른 고딕체 사용 */
+
+/* 나눔 바른 고딕체 */
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url('./Asset/Fonts/NanumBarunGothic.ttf');
 }
 
+/* 나눔 바른 고딕체 (굵음) */
 @font-face {
   font-family: 'NanumBarunGothicBold';
   src: url('./Asset/Fonts/NanumBarunGothicBold.ttf');
+}
+
+/* 나눔 바른 고딕체 (얇음) */
+@font-face {
+  font-family: 'NanumBarunGothicLight';
+  src: url('./Asset/Fonts/NanumBarunGothicLight.ttf');
+}
+
+/* 나눔 바른 고딕체 (아주 얇음) */
+@font-face {
+  font-family: 'NanumBarunGothicUltraLight';
+  src: url('./Asset/Fonts/NanumBarunGothicUltraLight.ttf');
 }
