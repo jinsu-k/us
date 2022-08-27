@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from 'Components/Common/Layout';
+import Layout from 'Components/Common/Layout/Layout';
 import { HomeArticle, HomeSection } from './HomStyle';
 
 const Home = () => {

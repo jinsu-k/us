@@ -8,8 +8,8 @@ import SignIn from 'Pages/SignIn';
 import SignUp from 'Pages/SignUp';
 import CoBuying from 'Pages/CoBuying';
 import UsedTrade from 'Pages/UsedTrade';
-import Header from 'Components/Common/Header';
-import Footer from 'Components/Common/Footer';
+import Header from 'Components/Common/Header/Header';
+import Footer from 'Components/Common/Footer/Footer';
 
 const Router = () => {
   return (
@@ -20,7 +20,7 @@ const Router = () => {
         <Route path="/signup" element={<SignUp />}></Route>
         <Route path="/signin" element={<SignIn />}></Route>
         <Route path="/mypage" element={<MyPage />}></Route>
-        <Route path="barter" element={<Barter />}></Route>
+        <Route path="/barter" element={<Barter />}></Route>
         <Route path="/cobuying" element={<CoBuying />}></Route>
         <Route path="/usedtrade" element={<UsedTrade />}></Route>
       </Routes>
