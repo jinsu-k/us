@@ -7,8 +7,16 @@ export const HomeArticle = styled.article`
 `;
 
 export const HomeSection = styled.section`
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
   padding: 40px 0 50px;
   margin: 0;
-  font-family: 'NanumBarunGothic';
-  text-align: center;
+`;
+
+export const HomeSectionTitle = styled.div`
+  font-size: 24px;
+  font-family: 'NanumBarunGothicBold';
+  text-align: left;
+  width: 100%;
 `;
