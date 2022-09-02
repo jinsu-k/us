@@ -10,10 +10,16 @@ export const CardContainer = styled.article`
   flex-grow: 1 1 0;
   padding: 10px 23px 20px 23px;
   margin-top: 10px;
-  margin-right: 1%;
+  margin-bottom: 3%;
+  width: 25%;
   border-radius: 8px;
   border: 0.1px solid #a9a9a9;
   box-shadow: 10px 10px 5px #a9a9a9;
+
+  &:hover {
+    transform: translateY(-5%);
+    transition: all 0.5s;
+  }
 `;
 
 export const CardWrapper = styled.div`
@@ -30,7 +36,7 @@ export const CardImageBlock = styled.div`
 export const CardImage = styled.img`
   display: inline-block;
   content: '';
-  width: 250px;
+  width: 100%;
   height: 300px;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -72,6 +78,7 @@ export const CardProgressBarGauge = styled.span<CardProgressBarProps>`
   height: 100%;
   background-color: #84e0cb;
   border-radius: 8px;
+  animation: charging 1s ease-out;
 
   ::before {
     content: '';
@@ -100,6 +107,15 @@ export const CardProgressBarGauge = styled.span<CardProgressBarProps>`
     padding: 1px 8px 1px ${props => (props.percent === 0 ? '14px' : '8px')};
     border-radius: 3px;
     animation: floating 0.5s infinite alternate;
+  }
+
+  @keyframes charging {
+    from {
+      width: 0;
+    }
+    to {
+      width: ${props => props.percent};
+    }
   }
 
   @keyframes floating {

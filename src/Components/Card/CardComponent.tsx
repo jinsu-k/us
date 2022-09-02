@@ -19,7 +19,7 @@ type CardComponentProps = {
 const CardComponent = ({ imgUrl, totalPartyNumber, participationNumber }: CardComponentProps) => {
   return (
     <CardContainer>
-      <CardWrapper>
+      <CardWrapper className="card_front">
         <CardProgressBarWrapper>
           <CardProgressBar>
             <CardProgressBarGauge
@@ -30,7 +30,7 @@ const CardComponent = ({ imgUrl, totalPartyNumber, participationNumber }: CardCo
         <CardImageBlock>
           <CardImage src={require(`../../Asset/Images/${imgUrl}`)} alt="" />
           <CardLabel>
-            너만 오면 Go! ({participationNumber}/{totalPartyNumber})
+            빈 자리 ({participationNumber}/{totalPartyNumber})
           </CardLabel>
         </CardImageBlock>
         <CardTitle>제목제목제목제제목제목제목제목목</CardTitle>

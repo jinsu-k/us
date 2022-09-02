@@ -9,6 +9,7 @@ export const HomeArticle = styled.article`
 export const HomeSection = styled.section`
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   flex-flow: wrap;
   padding: 40px 0 50px;
   margin: 0;
@@ -19,4 +20,6 @@ export const HomeSectionTitle = styled.div`
   font-family: 'NanumBarunGothicBold';
   text-align: left;
   width: 100%;
+  padding-left: 40px;
+  padding-bottom: 30px;
 `;
