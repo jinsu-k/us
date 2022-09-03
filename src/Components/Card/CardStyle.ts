@@ -5,61 +5,87 @@ type CardProgressBarProps = {
 };
 
 export const CardContainer = styled.article`
-  display: flex;
-  flex-flow: row wrap;
-  flex-grow: 1 1 0;
-  padding: 10px 23px 20px 23px;
+  position: relative;
+  width: 20%;
+  height: 350px;
+  padding: 10px 5px 20px 5px;
   margin-top: 10px;
-  margin-bottom: 3%;
-  width: 25%;
-  border-radius: 8px;
-  border: 0.1px solid #a9a9a9;
-  box-shadow: 10px 10px 5px #a9a9a9;
+  margin-bottom: 2%;
 
   &:hover {
-    transform: translateY(-5%);
-    transition: all 0.5s;
+    animation: card_floating 0.5s infinite alternate;
+  }
+
+  @keyframes card_floating {
+    0% {
+      transform: perspective(300px) scale(1.1) translateZ(0px);
+    }
+    100% {
+      transform: perspective(300px) scale(1.1) translateZ(3px);
+    }
   }
 `;
 
-export const CardWrapper = styled.div`
-  width: 100%;
-  height: 100%;
+const CardBorder = styled.div`
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 `;
 
-export const CardImageBlock = styled.div`
+export const CardWrapper = styled(CardBorder)`
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 20px #a9a9a9;
+  perspective: 150px;
+`;
+
+export const CardInner = styled(CardBorder)`
+  width: 98%;
+  height: 100%;
+  background-color: #fff;
+`;
+
+export const CardImageBlock = styled(CardBorder)`
+  width: 102%;
+  height: 70%;
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 `;
 
 export const CardImage = styled.img`
-  display: inline-block;
   content: '';
   width: 100%;
-  height: 300px;
-  border-radius: 8px;
+  height: 210px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   margin-bottom: 10px;
 `;
 
 export const CardTitle = styled.div`
   font-size: 16px;
-  font-family: 'NanumBarunGothic';
+  font-family: 'NanumBarunGothicBold';
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 200px;
-  padding: 5px 0 5px 10px;
+  width: 90%;
+  height: 10%;
+  padding-top: 5%;
+  padding-left: 7%;
 `;
 
-export const CardLabel = styled.label`
+export const CardLabel = styled.div`
   font-size: 12px;
-  font-family: 'NanumBarunGothicBold';
-  padding: 3px 3px 10px 10px;
+  font-family: 'NanumBarunGothic';
+  padding-top: 2%;
+  padding-left: 7%;
 `;
 
-export const CardProgressBarWrapper = styled.div`
-  padding: 20px 0 10px 0;
+export const CardProgressBarBlock = styled.div`
+  width: 90%;
+  height: 10%;
+  padding-top: 7%;
+  padding-left: 7%;
 `;
 
 export const CardProgressBar = styled.div`

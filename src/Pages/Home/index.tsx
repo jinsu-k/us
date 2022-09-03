@@ -14,8 +14,6 @@ const Home = () => {
           <CardComponent totalPartyNumber={100} participationNumber={80} imgUrl="img2.jpg" />
           <CardComponent totalPartyNumber={100} participationNumber={97} imgUrl="img3.jpg" />
           <CardComponent totalPartyNumber={100} participationNumber={89} imgUrl="img1.jpg" />
-          <CardComponent totalPartyNumber={100} participationNumber={70} imgUrl="img2.jpg" />
-          <CardComponent totalPartyNumber={100} participationNumber={80} imgUrl="img3.jpg" />
         </HomeSection>
       </HomeArticle>
     </Layout>

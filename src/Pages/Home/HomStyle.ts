@@ -20,6 +20,6 @@ export const HomeSectionTitle = styled.div`
   font-family: 'NanumBarunGothicBold';
   text-align: left;
   width: 100%;
-  padding-left: 40px;
-  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-bottom: 15px;
 `;
