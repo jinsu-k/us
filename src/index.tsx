@@ -5,14 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
+import { ThemeProvider } from 'styled-components';
+import { usTheme } from 'Styles/Theme/theme';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <BrowserRouter>
     <RecoilRoot>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
+      <ThemeProvider theme={usTheme}>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </ThemeProvider>
     </RecoilRoot>
   </BrowserRouter>,
 );

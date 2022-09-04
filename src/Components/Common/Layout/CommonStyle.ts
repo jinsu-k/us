@@ -6,5 +6,3 @@ export const LayoutContainer = styled.div`
   margin: 0 auto;
   padding: 0 60px;
 `;
-
-// #84e0cb

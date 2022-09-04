@@ -36,12 +36,10 @@ export const HeaderMenu = styled.div<HeaderStyleProps>`
   padding-top: 20px;
   font-size: 20px;
   font-family: 'NanumBarunGothicBold';
-  color: ${props => (props.isSelected ? '#84e0cb' : '')};
+  color: ${props => (props.isSelected ? props.theme.colors.UsPointColor : '')};
 
   &:hover {
     cursor: pointer;
-    color: #84e0cb;
+    color: ${props => props.theme.colors.UsPointColor};
   }
 `;
-
-// #84e0cb
