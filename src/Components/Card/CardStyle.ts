@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.article`
   position: relative;
-  width: 23%;
+  width: 90%;
   height: 400px;
   padding: 10px 5px 20px 0;
   margin-top: 10px;
@@ -10,6 +10,7 @@ export const CardContainer = styled.article`
 
   &:hover {
     animation: card_floating 0.5s infinite alternate;
+    cursor: pointer;
   }
 
   @keyframes card_floating {
@@ -41,7 +42,7 @@ export const CardInner = styled(CardBorder)`
 `;
 
 export const CardImageBlock = styled(CardBorder)`
-  width: 102%;
+  width: 102.1%;
   height: 60%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
