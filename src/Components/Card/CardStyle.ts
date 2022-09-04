@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.article`
   position: relative;
-  width: 20%;
+  width: 23%;
   height: 400px;
-  padding: 10px 5px 20px 5px;
+  padding: 10px 5px 20px 0;
   margin-top: 10px;
   margin-bottom: 2%;
 

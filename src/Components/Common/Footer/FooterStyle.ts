@@ -1,16 +1,15 @@
 import styled from 'styled-components';
 
-export const FooterContainer = styled.div`
-  width: 100%;
+export const FooterContainer = styled.footer`
+  position: relative;
+  max-width: 1256px;
   height: 60px;
+  margin: 0 auto;
   background-color: #dcdcdc;
-  font-family: 'NanumBarunGothicUltraLight';
   text-align: center;
   line-height: 60px;
+  font-family: 'NanumBarunGothicUltraLight';
+  transform: translateY(-100%);
 `;
 
-export const FooterWrapper = styled.div`
-  max-width: 1256px;
-  margin: 0 auto;
-  padding: 0 60px;
-`;
+export const FooterWrapper = styled.div``;

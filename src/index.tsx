@@ -1,19 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import { RecoilRoot } from 'recoil';
+import { BrowserRouter } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+
+import { usTheme } from 'Styles/Theme/theme';
+import { GlobalStyle } from 'Styles/Global/GlobalStyle';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
-import { RecoilRoot } from 'recoil';
-import { ThemeProvider } from 'styled-components';
-import { usTheme } from 'Styles/Theme/theme';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <BrowserRouter>
     <RecoilRoot>
       <ThemeProvider theme={usTheme}>
+        <GlobalStyle />
         <React.StrictMode>
           <App />
         </React.StrictMode>

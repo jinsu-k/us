@@ -6,11 +6,13 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <Router />
+    <>
+      <div id="us_main_wrapper">
+        <Header />
+        <Router />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

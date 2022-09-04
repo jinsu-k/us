@@ -9,17 +9,16 @@ export const HomeArticle = styled.article`
 export const HomeSection = styled.section`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-flow: wrap;
-  padding: 40px 0 50px;
+  padding: 20% 0 50px;
   margin: 0;
 `;
 
 export const HomeSectionTitle = styled.div`
   font-size: 24px;
   font-family: 'NanumBarunGothicBold';
-  text-align: left;
+  text-align: center;
   width: 100%;
-  padding-left: 50px;
-  padding-bottom: 15px;
+  padding-bottom: 50px;
 `;
