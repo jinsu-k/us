@@ -4,6 +4,15 @@ import 'slick-carousel/slick/slick-theme.css';
 import Card from 'Components/Card/Card';
 import { ImageUrlListType } from 'Pages/Home';
 import { CarouselContainer, CarouselSlider } from './CarouselStyle';
+import {
+  CardLabel,
+  CardTitle,
+  ProductInfoBlock,
+  ProductLabel,
+  ProductPrice,
+  ProgressBarBlock,
+} from 'Components/Card/CardStyle';
+import CircleProgressBar from 'Components/ProgressBar/CircleProgressBar';
 
 type CarouselProps = {
   // 임시로 slider를 구현하기 위해 사용한 변수 추후에 변경 예정
@@ -24,12 +33,22 @@ const Carousel = ({ data }: CarouselProps) => {
       <CarouselSlider {...settings}>
         {data.map((item, index) => {
           return (
-            <Card
-              key={`item_${index}`}
-              totalPartyNumber={item.totalPartyNumber}
-              participationNumber={item.participationNumber}
-              imgUrl={item.imgUrl}
-            />
+            <Card key={`item_${index}`} type="Home" imgUrl={item.imgUrl}>
+              <ProgressBarBlock>
+                <CircleProgressBar
+                  percent={Math.floor((item.participationNumber / item.totalPartyNumber) * 100)}
+                />
+              </ProgressBarBlock>
+              <CardLabel>
+                빈 자리 ({item.participationNumber}/{item.totalPartyNumber})
+              </CardLabel>
+              <CardTitle>제목제목제목제제목제목제제목목</CardTitle>
+              <ProductInfoBlock>
+                <ProductLabel className="product_label_left">[kg당]</ProductLabel>
+                <ProductLabel className="product_label_right">2022.09.20 까지</ProductLabel>
+                <ProductPrice>5,000 원</ProductPrice>
+              </ProductInfoBlock>
+            </Card>
           );
         })}
       </CarouselSlider>

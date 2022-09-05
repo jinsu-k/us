@@ -29,18 +29,18 @@ const Header = () => {
           <UsLogo />
         </HeaderLogoBlock>
         <HeaderMenu
+          isSelected={selectedHeader === '/cobuying'}
+          onClick={() => moveToPage('/cobuying')}
+        >
+          공동구매
+        </HeaderMenu>
+        <HeaderMenu
           isSelected={selectedHeader === '/usedtrade'}
           onClick={() => moveToPage('/usedtrade')}
         >
           중고거래
         </HeaderMenu>
         <HeaderMenu isSelected={selectedHeader === '/barter'} onClick={() => moveToPage('/barter')}>
-          공동구매
-        </HeaderMenu>
-        <HeaderMenu
-          isSelected={selectedHeader === '/cobuying'}
-          onClick={() => moveToPage('/cobuying')}
-        >
           물물교환
         </HeaderMenu>
       </HeaderWrapper>

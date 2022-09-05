@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 
-export const HomeArticle = styled.article`
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-`;
+export const HomeArticle = styled.article``;
 
 export const HomeSection = styled.section`
   display: flex;
