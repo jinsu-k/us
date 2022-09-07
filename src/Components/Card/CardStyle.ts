@@ -6,7 +6,7 @@ type CardType = {
 
 export const CardContainer = styled.article<CardType>`
   position: relative;
-  width: ${props => (props.type === 'Home' ? '90%' : '23%')};
+  width: ${props => (props.type === 'Home' ? '90%' : '100%')};
   height: 400px;
   padding: 10px 5px 20px 0;
   margin-top: 10px;

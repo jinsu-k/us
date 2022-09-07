@@ -25,10 +25,10 @@ export const CategorySearchBar = styled.input`
 `;
 
 export const CategoryContentsBlock = styled.div`
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-flow: wrap;
-  padding-top: 5%;
-  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  column-gap: 3%;
+  padding-top: 1%;
+  padding-bottom: 3%;
 `;

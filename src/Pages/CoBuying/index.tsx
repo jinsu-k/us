@@ -29,7 +29,6 @@ const IMAGE_URL_LIST: string[] = [
   'img1.jpg',
   'img2.jpg',
   'img3.jpg',
-  'img3.jpg',
 ];
 //
 
