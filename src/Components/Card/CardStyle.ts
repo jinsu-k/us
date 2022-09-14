@@ -13,7 +13,8 @@ export const CardContainer = styled.article<CardType>`
   margin-bottom: 2%;
 
   &:hover {
-    animation: card_floating 0.5s infinite alternate;
+    animation: ${props =>
+      props.type === 'Home' ? 'none' : 'card_floating 0.5s infinite alternate'};
     cursor: pointer;
   }
 
@@ -26,6 +27,8 @@ export const CardContainer = styled.article<CardType>`
     }
   }
 `;
+
+export const CardContentsWrapper = styled.div``;
 
 const CardBorder = styled.div`
   border-top-left-radius: 8px;
@@ -45,14 +48,14 @@ export const CardInner = styled(CardBorder)`
   background-color: #fff;
 `;
 
-export const CardImageBlock = styled(CardBorder)`
+export const CardImageWrapper = styled(CardBorder)`
   width: 102.1%;
   height: 60%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 `;
 
-export const CardImage = styled.img`
+export const Image = styled.img`
   content: '';
   width: 100%;
   height: 210px;
@@ -70,6 +73,7 @@ export const CardTitle = styled.div`
   width: 90%;
   height: 10%;
   padding-top: 10%;
+  padding-bottom: 5%;
   padding-left: 7%;
 `;
 

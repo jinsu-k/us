@@ -1,20 +1,23 @@
-import { CardContainer, CardImage, CardImageBlock, CardInner, CardWrapper } from './CardStyle';
+import { CardContentsType } from 'types';
+
+import CardContents from './CardContents';
+import CardThumbImage from './CardImage';
+import { CardContainer, CardInner, CardWrapper } from './CardStyle';
 
 type CardProps = {
-  children: React.ReactNode;
-  type: string;
-  imgUrl: string;
+  cardType: string;
+  cardContents: CardContentsType;
 };
 
-const Card = ({ children, type, imgUrl }: CardProps) => {
+const Card = ({ cardType, cardContents }: CardProps) => {
+  const { thumbImage, ...contents } = cardContents;
+
   return (
-    <CardContainer type={type}>
+    <CardContainer type={cardType}>
       <CardWrapper>
         <CardInner>
-          <CardImageBlock>
-            <CardImage src={require(`../../Asset/Images/${imgUrl}`)} alt="" />
-          </CardImageBlock>
-          {children}
+          <CardThumbImage thumbImage={thumbImage} />
+          <CardContents {...contents} />
         </CardInner>
       </CardWrapper>
     </CardContainer>

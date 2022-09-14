@@ -3,23 +3,23 @@
 /* 나눔 바른 고딕체 */
 @font-face {
   font-family: 'NanumBarunGothic';
-  src: url('./Asset/Fonts/NanumBarunGothic.ttf');
+  src: url('./Common/Asset/Fonts/NanumBarunGothic.ttf');
 }
 
 /* 나눔 바른 고딕체 (굵음) */
 @font-face {
   font-family: 'NanumBarunGothicBold';
-  src: url('./Asset/Fonts/NanumBarunGothicBold.ttf');
+  src: url('./Common/Asset/Fonts/NanumBarunGothicBold.ttf');
 }
 
 /* 나눔 바른 고딕체 (얇음) */
 @font-face {
   font-family: 'NanumBarunGothicLight';
-  src: url('./Asset/Fonts/NanumBarunGothicLight.ttf');
+  src: url('./Common/Asset/Fonts/NanumBarunGothicLight.ttf');
 }
 
 /* 나눔 바른 고딕체 (아주 얇음) */
 @font-face {
   font-family: 'NanumBarunGothicUltraLight';
-  src: url('./Asset/Fonts/NanumBarunGothicUltraLight.ttf');
+  src: url('./Common/Asset/Fonts/NanumBarunGothicUltraLight.ttf');
 }

@@ -32,3 +32,10 @@ export const CategoryContentsBlock = styled.div`
   padding-top: 1%;
   padding-bottom: 3%;
 `;
+
+export const CategoryProductInfoBlock = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flext;
+  flex-direction: row;
+`;

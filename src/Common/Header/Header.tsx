@@ -4,7 +4,7 @@ import { selectedHeaderState } from 'Recoils';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { HeaderLogoBlock, HeaderMenu, HeaderContainer, HeaderWrapper } from './HeaderStyle';
-import { ReactComponent as UsLogo } from '../../../Asset/Images/US_LOGO.svg';
+import { ReactComponent as UsLogo } from '../Asset/Images/US_LOGO.svg';
 
 const HEADER_URL_LIST = ['/usedtrade', '/barter', '/cobuying'];
 

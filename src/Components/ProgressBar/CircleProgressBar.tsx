@@ -1,7 +1,7 @@
 import {
   CircleProgressBarContainer,
-  CircleProgressFrame,
   CircleProgressBarInFrame,
+  CircleProgressFrame,
   CircleProgressValue,
 } from './ProgressBarStyle';
 
