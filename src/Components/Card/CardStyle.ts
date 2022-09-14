@@ -79,10 +79,9 @@ export const CardTitle = styled.div`
 
 export const ProductInfoBlock = styled.div`
   padding-left: 7%;
-  padding-right: 7%;
 
   .product_label_right {
-    padding-left: 42%;
+    padding-left: 43%;
   }
 `;
 

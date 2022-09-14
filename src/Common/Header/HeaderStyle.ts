@@ -7,9 +7,12 @@ type HeaderStyleProps = {
 export const HeaderContainer = styled.div`
   width: 100%;
   height: 56px;
+  position: fixed;
+  z-index: 1;
+  background-color: #fff;
+  text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align: center;
   border-bottom: 1px solid #dcdcdc;
 `;
 
@@ -19,15 +22,6 @@ export const HeaderWrapper = styled.div`
   max-width: 1256px;
   margin: 0 auto;
   padding: 0 60px;
-`;
-
-export const HeaderLogoBlock = styled.div`
-  width: 10%;
-  padding-top: 10px;
-
-  &:hover {
-    cursor: pointer;
-  }
 `;
 
 export const HeaderMenu = styled.div<HeaderStyleProps>`

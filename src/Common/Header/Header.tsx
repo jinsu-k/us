@@ -3,7 +3,7 @@ import { useRecoilState } from 'recoil';
 import { selectedHeaderState } from 'Recoils';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import { HeaderLogoBlock, HeaderMenu, HeaderContainer, HeaderWrapper } from './HeaderStyle';
+import { HeaderMenu, HeaderContainer, HeaderWrapper } from './HeaderStyle';
 import { ReactComponent as UsLogo } from '../Asset/Images/US_LOGO.svg';
 
 const HEADER_URL_LIST = ['/usedtrade', '/barter', '/cobuying'];
@@ -25,9 +25,10 @@ const Header = () => {
   return (
     <HeaderContainer>
       <HeaderWrapper>
-        <HeaderLogoBlock onClick={() => moveToPage('/')}>
-          <UsLogo />
-        </HeaderLogoBlock>
+        <UsLogo
+          onClick={() => moveToPage('/')}
+          style={{ paddingTop: '5px', paddingRight: '30px', cursor: 'pointer' }}
+        />
         <HeaderMenu
           isSelected={selectedHeader === '/cobuying'}
           onClick={() => moveToPage('/cobuying')}
