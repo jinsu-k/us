@@ -16,7 +16,13 @@ type CardContentsProps = {
   cobuying?: CoBuyingType;
 };
 
-const CardContents = ({ title, price, cobuying }: CardContentsProps) => {
+/**
+ * 카드에 표시할 컨텐츠 View 컴포넌트
+ * @param title 제목
+ * @param price 가격
+ * @param cobuying 공동구매 정보
+ */
+export default function CardContents({ title, price, cobuying }: CardContentsProps) {
   return (
     <CardContentsWrapper>
       {cobuying && (
@@ -43,6 +49,4 @@ const CardContents = ({ title, price, cobuying }: CardContentsProps) => {
       </ProductInfoBlock>
     </CardContentsWrapper>
   );
-};
-
-export default CardContents;
+}

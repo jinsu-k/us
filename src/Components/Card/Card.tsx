@@ -9,7 +9,12 @@ type CardProps = {
   cardContents: CardContentsType;
 };
 
-const Card = ({ cardType, cardContents }: CardProps) => {
+/**
+ * 상품 정보를 나타내는 Card View 컴포넌트
+ * @param cardType 카드의 타입 | ex) Home, UsedTrade ...
+ * @param cardContents 카드 내부에 표시할 콘텐츠 Object
+ */
+export default function Card({ cardType, cardContents }: CardProps) {
   const { thumbImage, ...contents } = cardContents;
 
   return (
@@ -22,6 +27,4 @@ const Card = ({ cardType, cardContents }: CardProps) => {
       </CardWrapper>
     </CardContainer>
   );
-};
-
-export default Card;
+}

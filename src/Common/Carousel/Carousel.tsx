@@ -7,7 +7,7 @@ type CarouselProps = {
   children: React.ReactNode;
 };
 
-const Carousel = ({ children }: CarouselProps) => {
+export default function Carousel({ children }: CarouselProps) {
   const settings = {
     dots: true,
     infinity: true,
@@ -21,6 +21,4 @@ const Carousel = ({ children }: CarouselProps) => {
       <CarouselSlider {...settings}>{children}</CarouselSlider>
     </CarouselContainer>
   );
-};
-
-export default Carousel;
+}

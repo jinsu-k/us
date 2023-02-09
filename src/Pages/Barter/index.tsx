@@ -1,6 +1,3 @@
-// 물물교환 페이지
-import React from 'react';
-
 import { BARTER_USEDTRADE_CONTENTS_LIST } from 'Utils';
 
 import Card from 'Components/Card/Card';
@@ -14,7 +11,10 @@ import {
   CategoryTopBlock,
 } from 'Components/Category/CategoryStyle';
 
-const Barter = () => {
+/**
+ * 물물교환 페이지
+ */
+export default function Barter() {
   return (
     <Layout>
       <CategoryArticle>
@@ -36,6 +36,4 @@ const Barter = () => {
       </CategoryArticle>
     </Layout>
   );
-};
-
-export default Barter;
+}

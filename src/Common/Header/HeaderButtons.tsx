@@ -5,7 +5,10 @@ import { currentUserState } from 'Recoils';
 
 import { HeaderButtonBlock, Button, CircleAvatar, UserMenu, UserMenuItem } from './HeaderStyle';
 
-const HeaderButtons = () => {
+/**
+ * Header 오른쪽 로그인/회원가입 버튼 Or UserAvartar 버튼 컴포넌트
+ */
+export default function HeaderButtons() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [currentUser, setCurrentUser] = useRecoilState(currentUserState);
 
@@ -36,6 +39,4 @@ const HeaderButtons = () => {
       )}
     </HeaderButtonBlock>
   );
-};
-
-export default HeaderButtons;
+}

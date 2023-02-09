@@ -1,6 +1,3 @@
-// 공동구매 페이지
-import React from 'react';
-
 import { COBUYING_CONTENTS_LIST } from 'Utils';
 
 import Card from 'Components/Card/Card';
@@ -14,7 +11,10 @@ import {
   CategoryTopBlock,
 } from 'Components/Category/CategoryStyle';
 
-const CoBuying = () => {
+/**
+ * 공동구매 페이지
+ */
+export default function CoBuying() {
   return (
     <Layout>
       <CategoryArticle>
@@ -32,6 +32,4 @@ const CoBuying = () => {
       </CategoryArticle>
     </Layout>
   );
-};
-
-export default CoBuying;
+}

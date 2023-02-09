@@ -1,7 +1,6 @@
-import React from 'react';
-
-const SignIn = () => {
+/**
+ * 로그인 페이지
+ */
+export default function SignIn() {
   return <div>Sign In</div>;
-};
-
-export default SignIn;
+}

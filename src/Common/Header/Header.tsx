@@ -6,7 +6,10 @@ import HeaderButtons from './HeaderButtons';
 import { HeaderContainer, HeaderWrapper } from './HeaderStyle';
 import { ReactComponent as UsLogo } from '../Asset/Images/US_LOGO.svg';
 
-const Header = () => {
+/**
+ * US Header 컴포넌트
+ */
+export default function Header() {
   const navigate = useNavigate();
 
   const moveToPage = (url: string) => navigate(url);
@@ -23,6 +26,4 @@ const Header = () => {
       </HeaderWrapper>
     </HeaderContainer>
   );
-};
-
-export default Header;
+}

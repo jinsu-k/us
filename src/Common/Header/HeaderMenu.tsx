@@ -6,7 +6,11 @@ type Props = {
   moveToPage: (url: string) => void;
 };
 
-const HeaderMenu = ({ moveToPage }: Props) => {
+/**
+ * Header 네비게이션 버튼 컴포넌트
+ * @param moveToPage 페이지 이동 함수
+ */
+export default function HeaderMenu({ moveToPage }: Props) {
   const { pathname } = useLocation();
 
   return (
@@ -22,6 +26,4 @@ const HeaderMenu = ({ moveToPage }: Props) => {
       </Menu>
     </HeaderMenuBlock>
   );
-};
-
-export default HeaderMenu;
+}

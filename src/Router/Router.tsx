@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Home from 'Pages/Home';
@@ -9,7 +8,10 @@ import SignUp from 'Pages/SignUp';
 import CoBuying from 'Pages/CoBuying';
 import UsedTrade from 'Pages/UsedTrade';
 
-const Router = () => {
+/**
+ * 라우터 정보 모음
+ */
+export default function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />}></Route>
@@ -21,6 +23,4 @@ const Router = () => {
       <Route path="/usedtrade" element={<UsedTrade />}></Route>
     </Routes>
   );
-};
-
-export default Router;
+}

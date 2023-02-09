@@ -1,13 +1,11 @@
-import React from 'react';
+import { PropsWithChildren } from 'react';
 
 import { LayoutContainer } from './CommonStyle';
 
-type LayoutProps = {
-  children: React.ReactNode;
-};
-
-const Layout = ({ children }: LayoutProps) => {
+/**
+ * 공통 레이아웃 컴포넌트
+ * @param children React Node Chilren
+ */
+export default function Layout({ children }: PropsWithChildren) {
   return <LayoutContainer>{children}</LayoutContainer>;
-};
-
-export default Layout;
+}

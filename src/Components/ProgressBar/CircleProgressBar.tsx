@@ -12,7 +12,7 @@ type CircleProgressBarProps = {
 const RADIUS = 20;
 const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 
-const CircleProgressBar = ({ percent }: CircleProgressBarProps) => {
+export default function CircleProgressBar({ percent }: CircleProgressBarProps) {
   const progress = percent / 100;
   const dashOffSet = CIRCUMFERENCE * (1 - progress);
 
@@ -31,6 +31,4 @@ const CircleProgressBar = ({ percent }: CircleProgressBarProps) => {
       <CircleProgressValue className="count_target">{percent}%</CircleProgressValue>
     </>
   );
-};
-
-export default CircleProgressBar;
+}
