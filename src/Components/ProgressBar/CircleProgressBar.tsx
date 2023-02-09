@@ -12,6 +12,10 @@ type CircleProgressBarProps = {
 const RADIUS = 20;
 const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 
+/**
+ * 공동구매 Card View에 표시될 ProgressBar 컴포넌트
+ * @param percent 공동구매 진행 바에 표시될 진행 퍼센트
+ */
 export default function CircleProgressBar({ percent }: CircleProgressBarProps) {
   const progress = percent / 100;
   const dashOffSet = CIRCUMFERENCE * (1 - progress);
