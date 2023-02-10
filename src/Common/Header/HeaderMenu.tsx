@@ -12,13 +12,13 @@ export default function HeaderMenu() {
 
   return (
     <HeaderMenuBlock>
-      <Menu isSelected={pathname === '/cobuying'} onClick={() => navigator(pathname)}>
+      <Menu isSelected={pathname === '/cobuying'} onClick={() => navigator('/cobuying')}>
         공동구매
       </Menu>
-      <Menu isSelected={pathname === '/usedtrade'} onClick={() => navigator(pathname)}>
+      <Menu isSelected={pathname === '/usedtrade'} onClick={() => navigator('/usedtrade')}>
         중고거래
       </Menu>
-      <Menu isSelected={pathname === '/barter'} onClick={() => navigator(pathname)}>
+      <Menu isSelected={pathname === '/barter'} onClick={() => navigator('/barter')}>
         물물교환
       </Menu>
     </HeaderMenuBlock>
