@@ -1,3 +1,4 @@
+import useNavigator from 'Hooks/useNavigator';
 import { CardContentsType } from 'types';
 
 import CardContents from './CardContents';
@@ -17,8 +18,10 @@ type CardProps = {
 export default function Card({ cardType, cardContents }: CardProps) {
   const { thumbImage, ...contents } = cardContents;
 
+  const navigator = useNavigator();
+
   return (
-    <CardContainer type={cardType}>
+    <CardContainer type={cardType} onClick={() => navigator(`/detail/${cardContents.id}`)}>
       <CardWrapper>
         <CardInner>
           <CardThumbImage thumbImage={thumbImage} />

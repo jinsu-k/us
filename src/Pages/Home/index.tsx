@@ -17,7 +17,7 @@ export default function Home() {
           <Carousel>
             {COBUYING_CONTENTS_LIST.map((contents, index) => {
               return (
-                <Card key={`card_carousel_${index}`} cardType="Home" cardContents={contents} />
+                <Card key={`card_carousel_${index}`} cardType={'home'} cardContents={contents} />
               );
             })}
           </Carousel>

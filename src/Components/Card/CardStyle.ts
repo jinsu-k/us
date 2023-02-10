@@ -6,7 +6,7 @@ type CardType = {
 
 export const CardContainer = styled.article<CardType>`
   position: relative;
-  width: ${props => (props.type === 'Home' ? '90%' : '100%')};
+  width: ${props => (props.type === 'home' ? '90%' : '100%')};
   height: 400px;
   padding: 10px 5px 20px 0;
   margin-top: 10px;
@@ -14,7 +14,7 @@ export const CardContainer = styled.article<CardType>`
 
   &:hover {
     animation: ${props =>
-      props.type === 'Home' ? 'none' : 'card_floating 0.5s infinite alternate'};
+      props.type === 'home' ? 'none' : 'card_floating 0.5s infinite alternate'};
     cursor: pointer;
   }
 

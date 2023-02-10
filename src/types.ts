@@ -6,6 +6,7 @@ export type CoBuyingType = {
 };
 
 export type CardContentsType = {
+  id: string;
   title: string;
   price: number;
   thumbImage: string;

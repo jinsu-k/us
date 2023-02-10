@@ -25,7 +25,7 @@ export default function CoBuying() {
           </CategoryTopBlock>
           <CategoryContentsBlock>
             {COBUYING_CONTENTS_LIST.map((contents, index) => (
-              <Card key={`usedtrade_${index}`} cardType="CoBuying" cardContents={contents} />
+              <Card key={`usedtrade_${index}`} cardType={'cobuying'} cardContents={contents} />
             ))}
           </CategoryContentsBlock>
         </CategorySection>

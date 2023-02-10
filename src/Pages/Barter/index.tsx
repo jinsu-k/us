@@ -27,7 +27,7 @@ export default function Barter() {
             {BARTER_USEDTRADE_CONTENTS_LIST.map((item, index) => (
               <Card
                 key={`usedtrade_${item.thumbImage}_${index}`}
-                cardType="Barter"
+                cardType={'barter'}
                 cardContents={item}
               />
             ))}
