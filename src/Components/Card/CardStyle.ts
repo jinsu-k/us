@@ -66,7 +66,7 @@ export const Image = styled.img`
 
 export const CardTitle = styled.div`
   font-size: 16px;
-  font-family: 'NanumBarunGothic';
+  font-family: ${props => props.theme.fontFamily.normal};
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -87,12 +87,12 @@ export const ProductInfoBlock = styled.div`
 
 export const ProductLabel = styled.label`
   font-size: 12px;
-  font-family: 'NanumBarunGothic';
+  font-family: ${props => props.theme.fontFamily.normal};
 `;
 
 export const ProductPrice = styled.div`
   font-size: 20px;
-  font-family: 'NanumBarunGothicBold';
+  font-family: ${props => props.theme.fontFamily.bold};
   padding-top: 10%;
 `;
 
@@ -106,6 +106,6 @@ export const ProgressBarBlock = styled.div`
 
 export const CardLabel = styled.div`
   font-size: 12px;
-  font-family: 'NanumBarunGothic';
+  font-family: ${props => props.theme.fontFamily.normal};
   padding-left: 7%;
 `;

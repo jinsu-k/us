@@ -8,7 +8,7 @@ export const FooterContainer = styled.footer`
   background-color: #dcdcdc;
   text-align: center;
   line-height: 60px;
-  font-family: 'NanumBarunGothicUltraLight';
+  font-family: ${props => props.theme.fontFamily.thin};
   transform: translateY(-100%);
 `;
 

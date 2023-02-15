@@ -13,7 +13,7 @@ export const HomeSection = styled.section`
 
 export const HomeSectionTitle = styled.div`
   font-size: 24px;
-  font-family: 'NanumBarunGothicBold';
+  font-family: ${props => props.theme.fontFamily.bold};
   text-align: center;
   width: 100%;
   padding-bottom: 50px;
