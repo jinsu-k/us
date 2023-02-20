@@ -12,3 +12,9 @@ export type CardContentsType = {
   thumbImage: string;
   cobuying?: CoBuyingType;
 };
+
+export type Comment = {
+  userName: string;
+  comments: string;
+  updatedAt: string;
+};

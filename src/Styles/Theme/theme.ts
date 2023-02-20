@@ -2,6 +2,9 @@ import { DefaultTheme } from 'styled-components';
 
 const colors = {
   UsPointColor: '#84e0cd',
+  gray: '#e9ecef',
+  gray2: '#808080',
+  white: '#ffffff',
 };
 
 const fontFamily = {
