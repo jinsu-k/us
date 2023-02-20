@@ -3,6 +3,7 @@ import { CardContentsType } from 'types';
 /* 임시 데이터 */
 export const COBUYING_CONTENTS_LIST: CardContentsType[] = [
   {
+    id: 'product20',
     title: '제목',
     thumbImage: 'img1.jpg',
     price: 10000,
@@ -14,6 +15,7 @@ export const COBUYING_CONTENTS_LIST: CardContentsType[] = [
     },
   },
   {
+    id: 'product2',
     title: '제목',
     thumbImage: 'img2.jpg',
     price: 10000,
@@ -25,6 +27,7 @@ export const COBUYING_CONTENTS_LIST: CardContentsType[] = [
     },
   },
   {
+    id: 'product3',
     title: '제목',
     thumbImage: 'img3.jpg',
     price: 10000,
@@ -36,6 +39,7 @@ export const COBUYING_CONTENTS_LIST: CardContentsType[] = [
     },
   },
   {
+    id: 'product4',
     title: '제목',
     thumbImage: 'img2.jpg',
     price: 10000,
@@ -47,6 +51,7 @@ export const COBUYING_CONTENTS_LIST: CardContentsType[] = [
     },
   },
   {
+    id: 'product5',
     title: '제목',
     thumbImage: 'img3.jpg',
     price: 10000,
@@ -58,6 +63,7 @@ export const COBUYING_CONTENTS_LIST: CardContentsType[] = [
     },
   },
   {
+    id: 'product6',
     title: '제목',
     thumbImage: 'img1.jpg',
     price: 10000,
@@ -69,6 +75,7 @@ export const COBUYING_CONTENTS_LIST: CardContentsType[] = [
     },
   },
   {
+    id: 'product7',
     title: '제목',
     thumbImage: 'img2.jpg',
     price: 10000,
@@ -80,6 +87,7 @@ export const COBUYING_CONTENTS_LIST: CardContentsType[] = [
     },
   },
   {
+    id: 'product8',
     title: '제목',
     thumbImage: 'img3.jpg',
     price: 10000,
@@ -91,6 +99,7 @@ export const COBUYING_CONTENTS_LIST: CardContentsType[] = [
     },
   },
   {
+    id: 'product9',
     title: '제목',
     thumbImage: 'img1.jpg',
     price: 10000,
@@ -102,6 +111,7 @@ export const COBUYING_CONTENTS_LIST: CardContentsType[] = [
     },
   },
   {
+    id: 'product10',
     title: '제목',
     thumbImage: 'img2.jpg',
     price: 10000,
@@ -113,6 +123,7 @@ export const COBUYING_CONTENTS_LIST: CardContentsType[] = [
     },
   },
   {
+    id: 'product11',
     title: '제목',
     thumbImage: 'img3.jpg',
     price: 10000,
@@ -124,6 +135,7 @@ export const COBUYING_CONTENTS_LIST: CardContentsType[] = [
     },
   },
   {
+    id: 'product12',
     title: '제목',
     thumbImage: 'img2.jpg',
     price: 10000,
@@ -135,6 +147,7 @@ export const COBUYING_CONTENTS_LIST: CardContentsType[] = [
     },
   },
   {
+    id: 'product13',
     title: '제목',
     thumbImage: 'img1.jpg',
     price: 10000,
@@ -146,6 +159,7 @@ export const COBUYING_CONTENTS_LIST: CardContentsType[] = [
     },
   },
   {
+    id: 'product14',
     title: '제목',
     thumbImage: 'img2.jpg',
     price: 10000,
@@ -160,66 +174,79 @@ export const COBUYING_CONTENTS_LIST: CardContentsType[] = [
 
 export const BARTER_USEDTRADE_CONTENTS_LIST: CardContentsType[] = [
   {
+    id: 'product15',
     title: '제목',
     thumbImage: 'img1.jpg',
     price: 10000,
   },
   {
+    id: 'product16',
     title: '제목',
     thumbImage: 'img2.jpg',
     price: 10000,
   },
   {
+    id: 'product17',
     title: '제목',
     thumbImage: 'img3.jpg',
     price: 10000,
   },
   {
+    id: 'product18',
     title: '제목',
     thumbImage: 'img2.jpg',
     price: 10000,
   },
   {
+    id: 'product19',
     title: '제목',
     thumbImage: 'img1.jpg',
     price: 10000,
   },
   {
+    id: 'product20',
     title: '제목',
     thumbImage: 'img2.jpg',
     price: 10000,
   },
   {
+    id: 'product21',
     title: '제목',
     thumbImage: 'img3.jpg',
     price: 10000,
   },
   {
+    id: 'product22',
     title: '제목',
     thumbImage: 'img2.jpg',
     price: 10000,
   },
   {
+    id: 'product23',
     title: '제목',
     thumbImage: 'img1.jpg',
     price: 10000,
   },
   {
+    id: 'product24',
     title: '제목',
     thumbImage: 'img2.jpg',
     price: 10000,
   },
   {
+    id: 'product25',
     title: '제목',
     thumbImage: 'img1.jpg',
     price: 10000,
   },
   {
+    id: 'product26',
     title: '제목',
     thumbImage: 'img3.jpg',
     price: 10000,
   },
   {
+    id: 'product27',
     title: '제목',
     thumbImage: 'img2.jpg',
     price: 10000,

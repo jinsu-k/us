@@ -6,7 +6,7 @@ type CardType = {
 
 export const CardContainer = styled.article<CardType>`
   position: relative;
-  width: ${props => (props.type === 'Home' ? '90%' : '100%')};
+  width: ${props => (props.type === 'home' ? '90%' : '100%')};
   height: 400px;
   padding: 10px 5px 20px 0;
   margin-top: 10px;
@@ -14,7 +14,7 @@ export const CardContainer = styled.article<CardType>`
 
   &:hover {
     animation: ${props =>
-      props.type === 'Home' ? 'none' : 'card_floating 0.5s infinite alternate'};
+      props.type === 'home' ? 'none' : 'card_floating 0.5s infinite alternate'};
     cursor: pointer;
   }
 
@@ -66,7 +66,7 @@ export const Image = styled.img`
 
 export const CardTitle = styled.div`
   font-size: 16px;
-  font-family: 'NanumBarunGothic';
+  font-family: ${props => props.theme.fontFamily.normal};
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -87,12 +87,12 @@ export const ProductInfoBlock = styled.div`
 
 export const ProductLabel = styled.label`
   font-size: 12px;
-  font-family: 'NanumBarunGothic';
+  font-family: ${props => props.theme.fontFamily.normal};
 `;
 
 export const ProductPrice = styled.div`
   font-size: 20px;
-  font-family: 'NanumBarunGothicBold';
+  font-family: ${props => props.theme.fontFamily.bold};
   padding-top: 10%;
 `;
 
@@ -106,6 +106,6 @@ export const ProgressBarBlock = styled.div`
 
 export const CardLabel = styled.div`
   font-size: 12px;
-  font-family: 'NanumBarunGothic';
+  font-family: ${props => props.theme.fontFamily.normal};
   padding-left: 7%;
 `;

@@ -14,7 +14,7 @@ export const CategoryTopBlock = styled.div`
 export const CategoryTitle = styled.div`
   width: 20%;
   font-size: 24px;
-  font-family: 'NanumBarunGothicBold';
+  font-family: ${props => props.theme.fontFamily.normal};
   text-align: left;
   padding-bottom: 50px;
 `;

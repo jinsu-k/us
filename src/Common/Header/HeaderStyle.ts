@@ -42,7 +42,7 @@ export const Menu = styled.div<HeaderStyleProps>`
   height: 30px;
   font-size: 20px;
   line-height: 30px;
-  font-family: 'NanumBarunGothicBold';
+  font-family: ${props => props.theme.fontFamily.bold};
   color: ${props => (props.isSelected ? props.theme.colors.UsPointColor : '')};
   padding-top: 15px;
 
@@ -72,7 +72,7 @@ export const Button = styled.span`
   font-size: 14px;
   text-align: center;
   line-height: 30px;
-  font-family: 'NanumBarunGothic';
+  font-family: ${props => props.theme.fontFamily.normal};
   margin: 12px 10px;
 
   &:hover {
