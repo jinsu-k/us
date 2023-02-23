@@ -7,7 +7,7 @@ export const HomeSection = styled.section`
   flex-direction: row;
   justify-content: space-between;
   flex-flow: wrap;
-  padding: 20% 0 50px;
+  padding: 10% 0 50px;
   margin: 0;
 `;
 
