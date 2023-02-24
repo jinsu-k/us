@@ -20,7 +20,6 @@ export const SignInWrapper = styled.div`
 
 export const SiginInTitle = styled.h1`
   text-align: center;
-  color: ${props => props.theme.colors.gray2};
 
   font-family: ${props => props.theme.fontFamily.bold};
 `;
