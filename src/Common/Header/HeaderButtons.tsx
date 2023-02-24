@@ -15,11 +15,11 @@ export default function HeaderButtons() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [currentUser, setCurrentUser] = useRecoilState(currentUserState);
 
+  // 임시 로그아웃 기능
   const signOut = () => {
     setIsOpenMenu(false);
     setCurrentUser(false);
   };
-  //
 
   const openMenuHandler = () => setIsOpenMenu(!isOpenMenu);
 
@@ -35,7 +35,9 @@ export default function HeaderButtons() {
       ) : (
         <>
           <Button onClick={() => navigator('/signin')}>로그인</Button>
-          <Button className="last_item">회원가입</Button>
+          <Button className="last_item" onClick={() => navigator('/signup')}>
+            회원가입
+          </Button>
         </>
       )}
     </HeaderButtonBlock>
