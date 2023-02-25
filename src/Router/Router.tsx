@@ -8,6 +8,7 @@ import SignUp from 'Pages/SignUp';
 import CoBuying from 'Pages/CoBuying';
 import UsedTrade from 'Pages/UsedTrade';
 import Detail from 'Pages/Detail';
+import CoBuyingDetail from 'Pages/CoBuying/Detail';
 
 /**
  * 라우터 정보 모음
@@ -21,6 +22,7 @@ export default function Router() {
       <Route path="/mypage" element={<MyPage />}></Route>
       <Route path="/barter" element={<Barter />}></Route>
       <Route path="/cobuying" element={<CoBuying />}></Route>
+      <Route path="/cobuying/detail/:id" element={<CoBuyingDetail />}></Route>
       <Route path="/usedtrade" element={<UsedTrade />}></Route>
       <Route path="/detail/:id" element={<Detail />}></Route>
     </Routes>

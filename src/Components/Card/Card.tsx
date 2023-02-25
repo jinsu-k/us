@@ -20,8 +20,13 @@ export default function Card({ cardType, cardContents }: CardProps) {
 
   const navigator = useNavigator();
 
+  const moveToDetail = (isCoBuying: boolean) => {
+    if (isCoBuying) return navigator(`/cobuying/detail/${cardContents.id}`);
+    navigator(`/detail/${cardContents.id}`);
+  };
+
   return (
-    <CardContainer type={cardType} onClick={() => navigator(`/detail/${cardContents.id}`)}>
+    <CardContainer type={cardType} onClick={() => moveToDetail(!!cardContents.cobuying)}>
       <CardWrapper>
         <CardInner>
           <CardThumbImage thumbImage={thumbImage} />
